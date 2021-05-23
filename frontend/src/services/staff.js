@@ -1,6 +1,6 @@
 import axios from 'axios'
 require('dotenv').config()
-const url=`${process.env.REACT_APP_BACKEND_URL}/api/staffs`
+const url=`/api/staffs`
 
 
 const getStaffs=async()=>{

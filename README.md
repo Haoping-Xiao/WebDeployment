@@ -16,7 +16,7 @@ Then, access to ./WebDeployment and set up docker environment.
 docker-compose up
 ```
 
-Now you can view the website via `http://localhost:3000`
+Now you can view the website via `http://localhost:3001`
 
 ## Docker service
 
