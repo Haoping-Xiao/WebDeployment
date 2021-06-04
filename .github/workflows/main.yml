@@ -9,6 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Login to DockerHub
+        uses: docker/login-action@v1 
+        with: 
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
       - uses: actions/checkout@v2
       - uses: snithyanantham/docker-compose-multiple-apps-heroku-deploy@v1.0 # This is the action
         with:
