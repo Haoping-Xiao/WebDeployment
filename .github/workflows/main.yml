@@ -15,4 +15,4 @@ jobs:
           api_key: ${{secrets.HEROKU_API_KEY}}
           email: "xhp980302306@gmail.com"
           docker_compose_file: './docker-compose.yml'
-          heroku_apps: '[{"imagename":"mongo","appname":"mongodb","apptype":"worker"},{"imagename":"mongo-express","appname":"mongo-express","apptype":"worker"},{"imagename":"web-backend","appname":"backend","apptype":"web"},{"imagename":"web-frontend","appname":"frontend","apptype":"web"}]' # List of Docker Image name, Heroku app and Heroku app type
+          heroku_apps: '[{"imagename":"mongo","appname":"mongodb","apptype":"web"},{"imagename":"mongo-express","appname":"mongo-express","apptype":"web"},{"imagename":"web-backend","appname":"backend","apptype":"web"},{"imagename":"web-frontend","appname":"frontend","apptype":"web"}]' # List of Docker Image name, Heroku app and Heroku app type
